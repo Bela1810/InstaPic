@@ -9,6 +9,11 @@
             font-family: 'Arial Narrow', arial, sans-serif; 
             color: #023047;
             background-color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;      
+            flex-direction: column;
+            min-height: 100vh;
         }  
         header{
             background-color: #219edc;
@@ -20,13 +25,18 @@
             background-color: #000;
             color: white;
         }
-        main{
-            padding: 20px;
-            max-width: 400px;
-            margin: 0 auto;
 
+        /*margin: 0 auto; Centrar forma 1*/
+
+        main{
+            display: flex;
+            flex: 1;                            /*content:toda la caja*/
+            padding: 20px;                      /*items: lo que esta dentro de la caja*/
+            justify-content: center;           
+            align-items: center;
         }
         .login-box{
+            max-width: 400px;
             background-color: #fff;
             padding: 40px;
             border-radius: 10px;
@@ -47,6 +57,19 @@
             border-radius: 5px;
             width: 100%;
             margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Eventos */   
+        .login-box input:focus{   
+            border-color: #fb8500;
+            outline: none;
+        }
+
+        .login-box a{
+            display: block; /*Convertir en bloque*/
+            text-align: center;
+            padding: 5px;
         }
 
     </style>
@@ -60,12 +83,13 @@
             <h2>Iniciar sesión</h2>
             <input type="text", placeholder="Nombre de Usuario"/>
             <input type="password", placeholder="Contraseña"/>
-            <a href="home.html">Ingresar</a> / <a href="sign-up.html">Registrarse</a>
+            <a href="home.html">Ingresar</a><a href="sign-up.html">Registrarse</a>
         </div>
     </main>
     <aside>
     </aside>
-    <footer>   <! -- Pie de Pagina -->
+    <footer>   
+        <!-- Pie de pagina-->
         &copy; Derechos Reservados - Informacion de Contacto
     </footer>
     

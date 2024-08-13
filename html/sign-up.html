@@ -4,21 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InstaPic</title>
+    <style>
+        body{
+            font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+            color: #023047;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+
+        }
+        header{
+            background-color: #219edc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        label{
+            background-color: #000;
+            color: white;
+        }
+
+        main{
+            display: flex;
+            flex: 1;                            /*content:toda la caja*/
+            padding: 20px;                      /*items: lo que esta dentro de la caja*/
+            justify-content: center;           
+            align-items: center;
+        }
+
+        .register-box{
+            max-width: 400px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px rgb(0,0,0,0.8);
+
+        }
+
+        .register-box h2{
+            text-align:  center;
+            margin-bottom: 20px;
+        }
+
+        .register-box input{
+            background-color: #fff;
+            border: 2px solid #219edc;
+            color: #023047;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 20px;
+            box-sizing: border-box;  
+
+        }
+
+        .register-box input:focus{   
+            border-color: #fb8500;
+            outline: none;
+        }
+
+        .register-box a{
+            display: block; /*Convertir en bloque*/
+            text-align: center;
+            padding: 5px;
+        }
+
+
+    </style>
 </head>
 <body>
     <header>
         <h1>InstaPIC</h1>
     </header>
     <main>
-        <label>Nombre de usuario</label>
-        <input type="text", id="username"/>
-        <label>Correo Electronico</label>
-        <input type="text", id="email"/>
-        <label>Contraseña</label>
-        <input type="password", id="password"/>
-        <a href="home.html">Continuar</a>
+        <div class="register-box">
+            <h2>Registrarse</h2>
+            <input type="text", placeholder="Nombre de Usuario"/>
+            <input type="text", placeholder="Correo Electronico"/>
+            <input type="password", placeholder="Contraseña"/>
+            <a href="home.html">Continuar</a>
+        </div>
     </main>
-    <footer>   <! -- Pie de Pagina -->
+    <footer>   
         &copy; Derechos Reservados - Informacion de Contacto
         
     </footer>
