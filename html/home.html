@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
@@ -10,27 +16,48 @@
         <h1>InstaPIC</h1>
         <ul>
             <li>Inicio</li>
-            <li>Subir Fotos</li>
+            <li>Mi perfil</li>
             <li>Buscar</li>
+            <li>Nueva Publicacion</li>
             <li>Cerrar Sesión</li>
         </ul>
     </header>
     <main>
-        <img src="foto.jpeg" />
-        Hola
-        Tienes 60 seguidores
-        Tienes 6 publicaciones
-        Tienes 6 solicitudes
-        <ul>
-            <li><img src="/images/image_1.jpg" width="300px"/></li>
-            <li><img src="/images/image_2.jpg" width="300px"/></li>
-            <li><img src="/images/image_3.jpg" width="300px"/></li>
-            <li><img src="/images/image_4.jpg" width="300px" /></li>
-            <li><img src="/images/image_5.jpg" width="300px" /></li>
-            <li><img src="/images/image_6.jpg" width="300px" /></li>
-        </ul>
+        <section id="profile">
+            <div>
+                <img src="/images/avatar_1.jpg" alt="">
+                Peter Parker
+            </div>
+            <div>
+                60 seguidores
+            </div>
+            <div>
+                6 publicaciones
+            </div>
+            <div>
+                7 solicitudes
+            </div>
+        </section>
+
+        <section id="gallery">
+            <ul>
+                <li><img src="/images/image_1.jpg" width="300px"/></li>
+                <li><img src="/images/image_2.jpg" width="300px"/></li>
+                <li><img src="/images/image_3.jpg" width="300px"/></li>
+                <li><img src="/images/image_4.jpg" width="300px" /></li>
+                <li><img src="/images/image_5.jpg" width="300px" /></li>
+                <li><img src="/images/image_6.jpg" width="300px" /></li>
+            </ul>
+        </section>
+
     </main>
-    <footer>   
+    <footer>
+        <ul>
+            <li><i class="fab fa-whatsapp" aria-hidden="true"></i></li>
+            <li><i class="fab fa-linkedin" aria-hidden="true"></i></li>
+            <li><i class="fab fa-twitter" aria-hidden="true"></i></li>
+        </ul>
+        <!-- Pie de pagina-->
         &copy; Derechos Reservados - Informacion de Contacto
     </footer>
     
