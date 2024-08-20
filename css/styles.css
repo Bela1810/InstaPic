@@ -22,7 +22,7 @@ label{
 /*margin: 0 auto; Centrar forma 1*/
 
 main{
-    display: flex;              /* como se va a mostrar */
+    display: flex;                       /* como se va a mostrar */
     flex: 1;                            /*content:toda la caja*/
     padding: 20px;                      /*items: lo que esta dentro de la caja*/
     justify-content: center;           
@@ -85,6 +85,8 @@ main{
     background-color: #fb8500;
 }
 
+
+
 footer{
     background-color: #023047;
     color: white;
@@ -115,6 +117,8 @@ footer > ul > li + li{    /* adyacente: tenga un anterior*/
 #profile{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    width: 80%;
 
 }
 
@@ -124,3 +128,44 @@ footer > ul > li + li{    /* adyacente: tenga un anterior*/
     align-items: center;
     display: block;
 }
+
+#profile div{
+    text-align: center;
+
+}
+
+#profile div span{
+    display: block;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav ul li{
+    display: inline;
+    font-weight: bold;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #023047;
+}
+
+ul li:first-child{
+    font-size: 2em;
+}
+
+
+
